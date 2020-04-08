@@ -27,29 +27,29 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-4e9eeac90723fb932cca.js"
+    "url": "webpack-runtime-e9c8555962a1a9ca9510.js"
   },
   {
-    "url": "framework-381539f6286ce6c8ee65.js"
+    "url": "framework-27884b2b7a2d0eaf81bf.js"
   },
   {
     "url": "styles.0566366ecd41a72e3ef5.css"
   },
   {
-    "url": "styles-aac6ea7536de35f0f07b.js"
+    "url": "styles-3c77236f468cd0dd747f.js"
   },
   {
-    "url": "app-5698fe906a0d26697cdf.js"
+    "url": "app-1bd89b996c395a4b68a6.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "c60dc6bb1b85cd1b77900d647405d440"
+    "revision": "9adb576eacad5b1b7c199b4d333b45b3"
   },
   {
-    "url": "component---src-i-18-n-redirect-js-1547d3116bcf5d4e4550.js"
+    "url": "component---src-i-18-n-redirect-js-f4fdf73d35e0e1e19507.js"
   },
   {
-    "url": "9defba8646e16e289931ff41b6603b1f24677201-aa415d8da464d75d0894.js"
+    "url": "9defba8646e16e289931ff41b6603b1f24677201-1089d65a48579e372a74.js"
   },
   {
     "url": "page-data/offline-plugin-app-shell-fallback/page-data.json",
@@ -57,7 +57,7 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "eb5308a4e4d2a5146389ff0c88b275cc"
+    "revision": "c3bcc6a8631b8afa6287b9412ac5bbcf"
   },
   {
     "url": "manifest.webmanifest",
@@ -154,7 +154,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/health-survey/app-5698fe906a0d26697cdf.js`))) {
+  if (!resources || !(await caches.match(`/health-survey/app-1bd89b996c395a4b68a6.js`))) {
     return await fetch(event.request)
   }
 
